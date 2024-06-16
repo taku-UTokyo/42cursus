@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/02 16:19:14 by thamada           #+#    #+#             */
-/*   Updated: 2024/06/02 16:34:26 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:57:06 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:37:38 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

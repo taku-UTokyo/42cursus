@@ -3,31 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/19 12:10:46 by thamada           #+#    #+#             */
-/*   Updated: 2024/04/19 13:54:45 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:55:41 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:48:07 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-size_t ft_strlen(const  char *str)
+size_t	ft_strlen(const char *str)
 {
-    size_t len;
-    len = 0;
-    while(*str)
-    {
-        str++;
-        len++;
-    }
-    return(len);
-}
+	size_t	len;
 
-#include <stdio.h>
-
-int main()
-{
-    const char *str = "";
-    printf("\"%s\"は%zu文字\n", str, ft_strlen(str));
+	len = 0;
+	while (*str != '\0')
+	{
+		len++;
+		str++;
+	}
+	return (len);
 }

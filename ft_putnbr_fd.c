@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/16 18:44:50 by takurohamad       #+#    #+#             */
-/*   Updated: 2024/06/16 19:44:08 by takurohamad      ###   ########.fr       */
+/*   Created: 2024/06/16 18:48:55 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:45:40 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned const char	*arr;
-	unsigned char		ch;
+	long long	num;
 
-	arr = (unsigned const char *)s;
-	ch = (unsigned char)c;
-	while (n--)
+	num = n;
+	if (num < 0)
 	{
-		if (*arr == ch)
-			return ((void *)arr);
-		arr++;
+		ft_putchar_fd('-', fd);
+		num *= -1;
 	}
-	return (NULL);
+	if (num <= 9)
+		ft_putchar_fd(num + '0', fd);
+	else
+	{
+		ft_putnbr_fd(num / 10, fd);
+		ft_putchar_fd(num % 10 + '0', fd);
+	}
 }

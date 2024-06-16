@@ -5,24 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 20:09:27 by takurohamad       #+#    #+#             */
-/*   Updated: 2024/04/18 20:19:21 by takurohamad      ###   ########.fr       */
+/*   Created: 2024/06/16 18:42:20 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:36:35 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int  c)
-{
-    if(32 <= c && c <= 126)
-        return(1);
-    return(0);
-}
+#include "libft.h"
 
-#include <stdio.h>
-int main()
+int	ft_isprint(int c)
 {
-    char c = 'h';
-    if(ft_isprint())
-        printf("okay");
-    else
-        printf("nop");
+	if (32 <= c && c <= 126)
+		return (1);
+	return (0);
 }

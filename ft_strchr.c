@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/02 15:46:52 by thamada           #+#    #+#             */
-/*   Updated: 2024/06/02 15:50:52 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:52:25 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:47:17 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-/*
-int	main(void)
-{
-	const char	s[7] = "bonjur";
-	int			c;
-
-	c = 98;
-	printf("%s\n", ft_strchr(s,c));
-}
-*/

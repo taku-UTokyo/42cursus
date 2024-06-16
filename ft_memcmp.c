@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/02 16:52:20 by thamada           #+#    #+#             */
-/*   Updated: 2024/06/02 17:07:44 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:45:19 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:44:24 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/02 15:26:26 by thamada           #+#    #+#             */
-/*   Updated: 2024/06/02 15:30:34 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 19:01:25 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:37:53 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

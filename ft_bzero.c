@@ -3,34 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/26 17:22:54 by thamada           #+#    #+#             */
-/*   Updated: 2024/05/26 18:10:11 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:37:53 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:35:05 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void    ft_bzero(void   *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    unsigned char *ptr;
-    
-    ptr = (unsigned char *)s;
-    while(n > 0)
-    {
-        *ptr = 0;
-        n--;
-        ptr++;
-    }
-}
-
-int main()
-{
-    int i;
-    i = 0;
-
-    char s[8] = "1987123";
-    ft_bzero(s, 3);
-    printf("%s\n", s);
+	ft_memset(s, 0, n);
 }

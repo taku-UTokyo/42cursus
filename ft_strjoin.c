@@ -1,29 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/16 18:44:50 by takurohamad       #+#    #+#             */
-/*   Updated: 2024/06/16 19:44:08 by takurohamad      ###   ########.fr       */
+/*   Created: 2024/06/16 18:54:19 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:46:48 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+static char	*ft_strcat(char *dest, char const *src)
 {
-	unsigned const char	*arr;
-	unsigned char		ch;
+	int	i;
 
-	arr = (unsigned const char *)s;
-	ch = (unsigned char)c;
-	while (n--)
+	i = 0;
+	while (dest[i])
+		i++;
+	while (*src)
+		dest[i++] = *src++;
+	dest[i] = '\0';
+	return (dest);
+}
+
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*arr;
+
+	if (!s1 || !s2)
+		return (NULL);
+	arr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (arr != NULL)
 	{
-		if (*arr == ch)
-			return ((void *)arr);
-		arr++;
+		arr[0] = '\0';
+		ft_strcat(arr, s1);
+		ft_strcat(arr, s2);
 	}
-	return (NULL);
+	return (arr);
 }

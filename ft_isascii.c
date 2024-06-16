@@ -3,26 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thamada <thamada@student.42.fr>            +#+  +:+       +#+        */
+/*   By: takurohamada <takurohamada@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 17:27:34 by takurohamad       #+#    #+#             */
-/*   Updated: 2024/04/19 11:47:46 by thamada          ###   ########.fr       */
+/*   Created: 2024/06/16 18:40:13 by takurohamad       #+#    #+#             */
+/*   Updated: 2024/06/16 19:36:23 by takurohamad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int  c)
-{
-    if(0 <= c && c <= 127)
-        return(1);
-    return(0);
-}
-#include <stdio.h>
+#include "libft.h"
 
-int main()
+int	ft_isascii(int c)
 {
-    char c = '∂';
-    if(ft_isascii(c))
-        printf("okay");
-    else
-        printf("nop");
+	if (0 <= c && c <= 127)
+		return (1);
+	return (0);
 }
